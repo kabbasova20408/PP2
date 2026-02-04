@@ -4,9 +4,16 @@ import java.util.Scanner;
 
 public class Hello {
     public static void main (String [] args){
-       Scanner sc= new Scanner(System.in);
-       int a;
-       a=sc.nextInt();
-       System.out.println("a = "+a);
+        Mathop m= new Mathop();
+        m.sum(2.5f,3.5f);
+       
+    }
+}
+class Mathop{
+    void sum (int a, int b){
+        System.out.println(a+b);
+    }
+    void sum(float a, float b){
+        System.out.println(a+b);
     }
 }
